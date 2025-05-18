@@ -1,0 +1,27 @@
+Windows Registry Editor Version 5.00
+
+; For Folder Background
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\shell\OpenIDE]
+@="Open Current Folder in IDE"
+"Icon"="C:\\Users\\YOURUSERNAME\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe,0"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\shell\OpenIDE\command]
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"Set-Location -LiteralPath '%V'; code .\""
+
+
+; For Selected Folders
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\OpenIDE]
+@="Open Folder in IDE"
+"Icon"="C:\\Users\\YOURUSERNAME\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe,0"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\OpenIDE\command]
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"code '%1'\""
+
+
+; For Selected Files
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\OpenIDE]
+@="Open with IDE"
+"Icon"="C:\\Users\\YOURUSERNAME\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe,0"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\OpenIDE\command]
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"code '%1'\""
