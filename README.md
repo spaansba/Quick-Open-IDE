@@ -9,7 +9,7 @@ The script adds context menu options for:
 
 The examples in the `.reg` file use Visual Studio Code (`code` and `Code.exe`) but can be easily adapted for other IDEs.
 
-![](https://github.com/spaansba/Quickly-Open-IDE/blob/main/static/example.gif)
+![](https://github.com/spaansba/Quick-Open-IDE/blob/main/static/example.gif)
 
 ## Prerequisites
 
